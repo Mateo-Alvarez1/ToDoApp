@@ -1,0 +1,132 @@
+
+.login {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.login_container {
+  width: 450px;
+  height: 100%;
+  padding-left: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.register_container {
+  height: 100%;
+}
+
+.register_button {
+  width: 270px;
+}
+
+/* FOrMULARIO */
+
+form {
+  margin: 10px 0px 0px 20px;
+}
+
+.login_container h2 {
+  color: #000000;
+  margin: 20px 0px 0px 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* BUTTONS */
+
+.login_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 91%;
+  margin: 0px 0px 0px 0px;
+}
+
+.login_buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 50%;
+  margin: 0px 5px 15px 0px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid  #2a6c6d;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  background-color:  #2a6c6d;
+}
+
+.login_buttons button:hover {
+  background-color: transparent;
+  color:  #2a6c6d;
+  transition: all 0.5s;
+}
+
+/* INPUT DESIGN */
+
+.login_input_box {
+  position: relative;
+  width: 250px;
+}
+
+.login_input_box input {
+  width: 380px;
+  padding: 10px;
+  border: 1px solid rgba(121, 121, 121, 0.507);
+  border-radius: 5px;
+  outline: none;
+  background-color: #ffffff;
+  font-size: 1em;
+  transition: 0.5s;
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.login_input_box input:valid,
+.login_input_box input:focus {
+  border: 1px solid #2a6c6d;
+}
+
+.error {
+  border-color: #e25555;
+}
+
+/* ANCHOR REDIRECTION */
+
+.anchor_redirection {
+  color: #000000;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 40px 20px 0px;
+}
+
+.anchor_redirection a {
+  text-decoration: none;
+  padding: 0px 0px 0px 5px;
+}
+
+@media (max-width: 600px) {
+  .login_container {
+    width: 300px;
+  }
+  .login_input_box input {
+    width: 240px;
+  }
+  .anchor_redirection {
+    margin: 0px 25px 10px 0px;
+  }
+  .login_buttons button {
+    width: 100%;
+    margin: 5px 7px 10px 0px;
+  }
+}
