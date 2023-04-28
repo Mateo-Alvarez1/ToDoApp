@@ -1,9 +1,9 @@
 import "./toDoApp.css";
-import { ToDoAdd } from "../components/ToDoAdd";
-import { ToDoList } from "../components/toDoList";
 import { useEffect, useReducer } from "react";
+import { ToDoAdd } from "../components/ToDoAdd";
 import { toDoReducer } from "../components/toDoReducer";
 import { NavBar } from "../components/NavBar";
+import { ToDoList } from "../components/toDoList.jsx";
 
 const init = () => {
   return JSON.parse(localStorage.getItem('todos')) || []
@@ -63,8 +63,8 @@ export const ToDoPage = () => {
             </h4>
           </div>
 
-          <ToDoList
-            todos={todos}
+          <ToDoList         
+           todos={todos}
             onDeleteTodo={onDeleteTodo}
             onToggleTodo={onToggleTodo}
           />

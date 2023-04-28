@@ -1,4 +1,4 @@
-import { ToDoItem } from "./toDoItem";
+import { ToDoItem } from "./ToDoItem";
 
 export const ToDoList = ({ todos = [] , onDeleteTodo , onToggleTodo }) => {
   return (
