@@ -7,7 +7,8 @@ import {
   checkingAuthentication,
   startGoogleSignIn,
 } from "../../store/auth/thunks";
-import { useEffect, useMemo } from "react";
+import { Link  } from 'react-router-dom'
+import { useMemo } from "react";
 
 export const LoginPage = () => {
   const dispatch = useDispatch();
@@ -71,8 +72,8 @@ export const LoginPage = () => {
           </form>
         </div>
         <div className="anchor_redirection">
-          <span>¿ No tienes una cuenta ? </span>{" "}
-          <a href="register"> Creala Aqui</a>
+          <span>¿ No tienes una cuenta ? </span>
+          <Link to={'/auth/register'}>Ingresa</Link>
         </div>
       </div>
     </div>

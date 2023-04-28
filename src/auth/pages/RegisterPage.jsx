@@ -2,6 +2,7 @@ import { useMemo, useState } from "react"
 import { useForm } from "../../hooks/useForm"
 import { useDispatch, useSelector } from "react-redux"
 import { startCreatingWithEmailPassword } from "../../store/auth/thunks"
+import { Link  } from 'react-router-dom'
 
 const formData = {
   email:'',
@@ -93,7 +94,7 @@ export const RegisterPage = () => {
      
       
       <div className="anchor_redirection">
-         <span>¿ Ya tienes una cuenta ? </span><a href='login' > Ingresa</a>
+         <span>¿ Ya tienes una cuenta ? </span><Link to={'/auth/login'}>Ingresa</Link>
       </div> 
     </div>
   </div>
