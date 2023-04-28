@@ -3,7 +3,7 @@ import { useEffect, useReducer } from "react";
 import { ToDoAdd } from "../components/ToDoAdd";
 import { toDoReducer } from "../components/toDoReducer";
 import { NavBar } from "../components/NavBar";
-import { ToDoList } from "../components/toDoList.jsx";
+import { ToDoList } from "../components/ToDoList.jsx";
 
 const init = () => {
   return JSON.parse(localStorage.getItem('todos')) || []
