@@ -151,8 +151,9 @@ li {
 /* MEDIA QUERIES */
 
 @media (max-width: 600px) {
+
   .toDo_container{
-    min-height: 800px;
+    height: 750px;
   }
   .toDos_container {
     width: 350px;

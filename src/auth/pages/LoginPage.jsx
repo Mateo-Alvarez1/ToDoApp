@@ -73,7 +73,7 @@ export const LoginPage = () => {
         </div>
         <div className="anchor_redirection">
           <span>¿ No tienes una cuenta ? </span>
-          <Link to={'/auth/register'}>Ingresa</Link>
+          <Link to={'/auth/register'}>Crea una</Link>
         </div>
       </div>
     </div>
